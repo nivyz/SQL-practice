@@ -1,4 +1,4 @@
-# SQLPractice Journey
+# SQL Practice Journey
 This repository contains my SQL practice from coding platforms like HackerRank.
 
 ## SQL Learning Plan
