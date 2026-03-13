@@ -1,5 +1,13 @@
-# SQL-practice
-This repository contains all solutions solved for SQL problems from platforms such as Hackerrank.
+# SQLPractice Journey
+This repository contains my SQL practice from coding platforms like HackerRank.
 
-## Contents
-This will contain separate folders for most of the sql operations, with a .md file for description and solution of problems obtained by self (also committed in hackerrank).
+## SQL Learning Plan
+
+| Topic | No. of tasks solved|
+|------|------|
+| SQL Basics | 8 |
+| Filtering | 7 |
+| Aggregation | 10 |
+| JOIN | 12 |
+| Subqueries | 7 |
+| Window Functions | 6 |
