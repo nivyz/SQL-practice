@@ -17,12 +17,44 @@ This file contains my SQL practice solutions for basic SELECT queries from Hacke
 ### Solutions
 
 #### Problem 1
+Difference between the total number of CITY entries in the table and the number of distinct CITY entries
 ```
-SELECT * from CITY;
+select count(city)- count(DISTINCT city) FROM STATION;
 ```
 ---
 #### Problem 2
 ```
-SELECT * from CITY where ID = 1661;
+SELECT CITY, LENGTH(CITY) AS CityLength FROM STATION ORDER BY CityLength, CITY LIMIT 1; 
+SELECT CITY, LENGTH(CITY) AS CityLength FROM STATION ORDER BY CityLength DESC, CITY LIMIT 1;
+```
+------------
+#### Problem 3
+list of CITY names starting with vowels from table STATION, without duplicates.
+```
+SELECT DISTINCT CITY
+FROM STATION
+CITY where city LIKE 'a%' OR
+city LIKE 'e%' OR
+city LIKE 'i%' OR
+city LIKE 'o%' OR
+city LIKE 'u%';
+```
+-----------------------------------
+#### Problem 4
+list of CITY names ending with vowels from table STATION, without duplicates.
+```
+SELECT DISTINCT CITY
+FROM STATION
+CITY where city LIKE '%a' OR
+city LIKE '%e' OR
+city LIKE '%i' OR
+city LIKE '%o' OR
+city LIKE '%u';
+```
+-----------------------------------
+#### Problem 5
+list of CITY names ending with vowels from table STATION, without duplicates.
+```
+
 ```
 -----------------------------------
