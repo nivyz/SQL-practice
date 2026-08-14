@@ -7,7 +7,7 @@ This repository contains my SQL practice from coding platforms like HackerRank.
 |------|------|
 | [SQL Basics](basic_SQL.md) | 8 |
 | Filtering | 7 |
-| Aggregation | 10 |
+| [Aggregation](Aggregation.md) | 10 |
 | JOIN | 12 |
 | Subqueries | 7 |
 | Window Functions | 6 |
