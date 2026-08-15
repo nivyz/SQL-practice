@@ -1,0 +1,10 @@
+
+
+
+create table persons (
+id int not null,
+person_name varchar(50) not null,
+birth_date date,
+phone varchar(10) not null,
+constraint pk primary key(id)
+)
