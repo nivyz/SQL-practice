@@ -14,6 +14,8 @@ This file contains my SQL practice solutions for Aggregation queries from Hacker
 | [8](#problem-8)| The Blunder |
 | [9](#problem-9)| Weather Observation Station 14 |
 | [10](#problem-10)| Weather Observation Station 15|
+| [11](#problem-11)| Use of HAVING|
+| [12](#problem-12)| All basic commands (together)|
 
 ---
 
@@ -84,9 +86,23 @@ Query the greatest value of the Northern Latitudes (LAT_N) from STATION that is 
 SELECT round(max(lat_n),4) from station where lat_n<137.2345
 ```
 -----------------------------------
-#### Problem10
+#### Problem 10
 Query the Western Longitude (LONG_W) for the largest Northern Latitude (LAT_N) in STATION that is less than 137.2345 . Round your answer to  decimal places.
 ```
-SELECT round(long_w,4) from station where lat_n < 137.2345 order by lat_n desc limit 1
+SELECT top 1 round(long_w,4) from station where lat_n < 137.2345 order by lat_n desc
+```
+note: top 1 (before tablename) or limit 1 (after tablename) can be used.
+-----------------------------------
+#### Problem 11
+Query the Western Longitude (LONG_W) for the largest Northern Latitude (LAT_N) in STATION that is less than 137.2345 . Round your answer to  decimal places.
+```
+select year, avg(close) from tutorial.aapl_historical_stock_price GROUP by year having AVG(close)>100
 ```
 -----------------------------------
+#### Problem 12
+Find the average score for each country considering only customers with a score not equal to 0 and return only those countries with an average score greater than 430.
+```
+select country,avg(score) as avg_score from dbo.customers where score !=0 GROUP BY country having avg(score)>430 order by avg_score desc
+```
+-----------------------------------
+
