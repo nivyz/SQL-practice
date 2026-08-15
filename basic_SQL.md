@@ -14,6 +14,7 @@ This file contains my SQL practice solutions for basic SELECT queries from Hacke
 | [6](#problem-6) | Japanese Cities' Names |
 | [7](#problem-7) | Weather Observation Station 1 |
 | [8*](#problem-8)| Weather Observation Station 3 |
+| [9*](#problem-9)| Adding static value to table |
 
 ---
 
@@ -58,4 +59,11 @@ SELECT city, state from STATION;
 #### Problem 8
 ```
 SELECT DISTINCT city from STATION where ID%2=0 ;
+```
+-----------------------------------
+#### Problem 9
+To a record, add a static value 'SAP' to show the source metadata/lineage
+```
+SELECT *, 'sap' AS source_system
+FROM raw_orders;
 ```
