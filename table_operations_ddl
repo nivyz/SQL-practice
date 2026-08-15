@@ -1,10 +1,45 @@
+This file contains my SQL practice solutions for basic table creation (DDL).
 
+## Problem List
 
+| # | Problem Name |
+|---|---|
+|[1](#problem-1) | Table creation with constraints |
+| [2](#problem-2) | Alter table |
+| [3](#problem-3) | Remove a column |
+| [4](#problem-4) | Delete table |
+---
 
+### Solutions
+
+#### Problem 1
+Create a new table called persons with columns: id, person_name, birth_date and phone
+```
 create table persons (
-id int not null,
+id int not null,         -- format# field | datatype | constraint
 person_name varchar(50) not null,
 birth_date date,
 phone varchar(10) not null,
 constraint pk primary key(id)
 )
+```
+---
+#### Problem 2
+Add a column email to the table
+```
+alter table persons 
+add email varchar(20)
+```
+-----------------------------------
+#### Problem 3
+Remove the column phone from table
+```
+alter table persons drop column phone
+
+```
+-----------------------------------
+#### Problem 4
+Delete the table
+```
+drop table persons
+```
