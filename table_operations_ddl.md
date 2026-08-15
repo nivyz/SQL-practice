@@ -1,4 +1,4 @@
-This file contains my SQL practice solutions for basic table creation (DDL).
+This file contains SQL practice solutions for basic table operations (DDL).
 
 ## Problem List
 
