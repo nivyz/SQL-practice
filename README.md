@@ -11,4 +11,4 @@ This repository contains my SQL practice from coding platforms like HackerRank.
 | JOIN | 12 |
 | Subqueries | 7 |
 | Window Functions | 6 |
-| Table operations (DDL) | 4 |
+| [table&data_operations_ddl](table&data_operations_ddl.md)| 7 |
