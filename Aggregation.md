@@ -92,6 +92,7 @@ Query the Western Longitude (LONG_W) for the largest Northern Latitude (LAT_N) i
 SELECT top 1 round(long_w,4) from station where lat_n < 137.2345 order by lat_n desc
 ```
 note: top 1 (before tablename) or limit 1 (after tablename) can be used.
+
 -----------------------------------
 #### Problem 11
 Query the Western Longitude (LONG_W) for the largest Northern Latitude (LAT_N) in STATION that is less than 137.2345 . Round your answer to  decimal places.
@@ -104,5 +105,7 @@ Find the average score for each country considering only customers with a score 
 ```
 select country,avg(score) as avg_score from dbo.customers where score !=0 GROUP BY country having avg(score)>430 order by avg_score desc
 ```
+note: != or <> do the same action
+
 -----------------------------------
 
